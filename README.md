@@ -133,7 +133,7 @@ Here we have used the ```text_field, link, select_list, radio_button, button and
 Cucumber features are written in a file with extension ```.feature```. Lets create a feature file inder /feature called ```facebook_home.feature```. The first feature and scenario will be
 
 ##### Scenario for page header
-```
+```ruby
 Feature: Facebook social networking Home Page.
 
 Background:
