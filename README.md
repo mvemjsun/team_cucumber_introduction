@@ -133,7 +133,7 @@ Here we have used the ```text_field, link, select_list, radio_button, button and
 Cucumber features are written in a file with extension ```.feature```. Lets create a feature file inder /feature called ```facebook_home.feature```. The first feature and scenario will be
 
 ##### Scenario for page header
-```ruby
+```rubygems
 Feature: Facebook social networking Home Page.
 
 Background:
@@ -146,7 +146,7 @@ Scenario: Check that the home page has header items displayed correctly.
 	And header part of the page should have a button for signing in
 	And their should be a link to "Forgotten your password?"
 ```
-We have used a ```Background``` which is used to group steps that will be executed before each scenario. Next I have written a scenario that I have tagged with a tag @header. These tags can be used in cucumber commands to include or execlude the scenarios that we want to run.
+We have used a ```Background``` which is used to group steps that will be executed before each scenario. Next I have written a scenario that I have tagged with a tag ```@header```. These tags can be used in cucumber commands to include or exclude the scenarios that we want to run.
 
 Lets go ahead and implement the above 4 steps and the background step.
 
@@ -363,3 +363,4 @@ Rakefile
 2. [Cucumber] : http://cukes.info/
 3. [Page object design pattern] :http://code.google.com/p/selenium/wiki/PageObjects
 4. [Rspec] : http://rspec.info/
+5. [Watir] : http://watirwebdriver.com/
