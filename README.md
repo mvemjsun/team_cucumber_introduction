@@ -359,8 +359,8 @@ Please note that its possible to set up Rake tasks to achieve the above so that 
 Rakefile
 
 #### References
-1. [Page Object gem]: https://github.com/cheezy/page-object
-2. [Cucumber] : http://cukes.info/
-3. [Page object design pattern] :http://code.google.com/p/selenium/wiki/PageObjects
-4. [Rspec] : http://rspec.info/
-5. [Watir] : http://watirwebdriver.com/
+1. [Page Object gem] (https://github.com/cheezy/page-object)
+2. [Cucumber] (http://cukes.info/)
+3. [Page object design pattern] (:)http://code.google.com/p/selenium/wiki/PageObjects)
+4. [Rspec] (http://rspec.info/)
+5. [Watir] (http://watirwebdriver.com/)
