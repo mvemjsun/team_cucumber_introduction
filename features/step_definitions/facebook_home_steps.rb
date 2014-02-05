@@ -39,9 +39,9 @@ end
 
 And(/^there should be a select lists for day, month and year parts of the date of birth$/) do
 	on(FacebookHomePage) do |page|
-		page.day_element.visible?.should == true
-		page.month_element.visible?.should == true
-		page.year_element.visible?.should == true
+		page.dob_day_element.visible?.should == true
+		page.dob_month_element.visible?.should == true
+		page.dob_year_element.visible?.should == true
 	end
 end
 

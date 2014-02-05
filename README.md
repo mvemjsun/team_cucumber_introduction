@@ -233,9 +233,9 @@ end
 
 And(/^there should be a select lists for day, month and year parts of the date of birth$/) do
 	on(FacebookHomePage) do |page|
-		page.day_element.visible?.should == true
-		page.month_element.visible?.should == true
-		page.year_element.visible?.should == true
+		page.dob_day_element.visible?.should == true
+		page.dob_month_element.visible?.should == true
+		page.dob_year_element.visible?.should == true
 	end
 end
 
@@ -341,6 +341,14 @@ on(FacebookHomePage).login_correctly
 on(FacebookHomePage).login_incorrectly
 on(FacebookHomePage).login_with(user_id,password)
 ```
+#### Running the tests
+Execute any one of the below commands.
+1. ```cucumber``` from the project root directory. Cucumber will automatically search for all the features to run. Please note that the first file that cucumber executes in the support directory is the ```env.rb``` file.
+2. You can also execute ```cucumber --tags @register``` to run only the scenarios and features tagged with @register tag.
+3. You can also execute ```cucumber --tags @footer``` to run only the scenarios and features tagged with @footer tag.
+4. In case you want to generate a pretty HTML report when running all the features execute ```cucumber --format html -o report.html```
+
+Please note that its possible to set up Rake tasks to achieve the above so that we dont need to type the commands repeatedly.
 
 #### TODO
 Rakefile
