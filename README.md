@@ -29,7 +29,7 @@ gem 'page-object'
 execute bundle update command to install these if they are not already installed on your machine.
 
 #### The before and after hooks
-We start of by writing simple Before and After hooks for our project. These hooks are triggered before and after each cucumber scenario. These can take in additional parameters such as tag names so that they are executed only before or after certain scenarios or features. They can alose be useful for set up test data and cleanup before and after tests.
+We start of by writing simple Before and After hooks for our project. These hooks are triggered before and after each cucumber scenario. These can take in additional parameters such as tag names so that they are executed only before or after certain scenarios or features. They can also be useful for set up test data and cleanup before and after tests.
 
 Lets write a Before hook in the file features/hooks.rb
 
@@ -57,7 +57,7 @@ end
 ```
 This code takes in a block to check if the scenario has failed. If it has failed it takes a screenshot in the /evidence folder.
 
-#### The page object class for the face book home page
+#### The page object class for the Facebook home page
 
 We need to write a page object class using the PageObject mixin module offered by the page-object gem. The page object class exposes all the functionality of the page under test and all the teststeps interact with the page through the page object.
 
@@ -306,7 +306,7 @@ the tabular data is yeilded as a block variable which is of type ```Cucumber::As
 
 #### Further improving the page class
 
-As this is the facebook home page, I might live to further improve it bu adding a few more methods to it to make our future step definitions even more elegant and DRY.
+As this is the facebook home page, I might like to further improve it by adding a few more methods to it to make our future step definitions even more elegant and DRY. So add the below to ```features/support/pages/facebook_home.rb``` file
 
 ```ruby
 	def login_correctly
@@ -346,7 +346,7 @@ on(FacebookHomePage).login_with(user_id,password)
 Rakefile
 
 #### References
-[Page Object gem]: https://github.com/cheezy/page-object
-[Cucumber] : http://cukes.info/
-[Page object design pattern] :http://code.google.com/p/selenium/wiki/PageObjects
-[Rspec] : http://rspec.info/
+1. [Page Object gem]: https://github.com/cheezy/page-object
+2. [Cucumber] : http://cukes.info/
+3. [Page object design pattern] :http://code.google.com/p/selenium/wiki/PageObjects
+4. [Rspec] : http://rspec.info/
