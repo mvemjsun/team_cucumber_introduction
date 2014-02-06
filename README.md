@@ -2,7 +2,8 @@
 
 #### Introduction
 In this tutorial I attempt to demonstrate and share how can we practice BDD or TDD as the case may be using Ruby and Cucumber. Cucumber provides us with the tools to write our test cases (behaviour of the system under test) in plain English.This plain english is parsed using gerkhin.Its defined as
-"the language that Cucumber understands. It is a Business Readable, Domain Specific Language that lets you describe software’s behaviour without detailing how that behaviour is implemented". I assume some basic knowlegde of Ruby and what Cucumber is.
+>"the language that Cucumber understands. It is a Business Readable, Domain Specific Language that lets you describe software’s behaviour without detailing how that behaviour is implemented". 
+I assume some basic knowlegde of Ruby and what Cucumber is.
 
  I have chosen the Facebook home page as the page under test. In this part I will take you through the steps of setting up a very simple cucumber project. I utilises the ```page-object``` gem along with ```watir-webdriver``` and ```rspec``` to help me in the cucumber steps. Page object helps us to build our page class exposing the behaviour of our page, watir helps to drive the web browser and rspec helps with the our step implementations and has got very useful assertion functions. 
 
@@ -125,8 +126,6 @@ class FacebookHomePage
 	link(:help, :text => "help")
 end
 ```
-Facebook home page: 
-![alt text](https://github.com/mvemjsun/cucumber_introduction/blob/master/facebook_home.gif "Facebook home page")
 
 Here we have used the ```text_field, link, select_list, radio_button, button and page_url``` page-object methods. There are methods available for most of the html elements, most of the methods take in a selector that help to identify the html element.
 
