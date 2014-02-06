@@ -125,6 +125,8 @@ class FacebookHomePage
 	link(:help, :text => "help")
 end
 ```
+Facebook home page: 
+![alt text](https://github.com/mvemjsun/cucumber_introduction/blob/master/facebook_home.gif "Facebook home page")
 
 Here we have used the ```text_field, link, select_list, radio_button, button and page_url``` page-object methods. There are methods available for most of the html elements, most of the methods take in a selector that help to identify the html element.
 
