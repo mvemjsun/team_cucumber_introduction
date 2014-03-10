@@ -15,7 +15,6 @@ class FacebookHomePage
 	#
 	# --- Some text fields for signing up
 	#
-	h1(:signup_header, :class => "mbs _3ma _6n _6s _6v", :index => 0)
 	text_field(:firstname, :name => "firstname")
 	text_field(:lastname, :name => "lastname")
 	text_field(:reg_email, :name => "reg_email__")

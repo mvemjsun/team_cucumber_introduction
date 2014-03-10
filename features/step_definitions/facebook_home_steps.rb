@@ -19,7 +19,7 @@ And(/^their should be a link to "(.*)"$/) do |link_text|
 end
 
 Then(/^there should be a signup section$/) do
-	on(FacebookHomePage).signup_header?.should == true
+	on(FacebookHomePage).html.should include("Create an account")
 end
 
 And(/^there should be a textbox for firstname, lastname and emailaddress$/) do
